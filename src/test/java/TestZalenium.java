@@ -31,9 +31,9 @@ public class TestZalenium {
     @Test
     public void testZalenium(){
         driver.get("https://www.google.com.br");
+
         Cookie cookie = new Cookie("zaleniumTestPassed", "true");
         driver.manage().addCookie(cookie);
-        Assert.assertFalse(true);
     }
 
     @After
