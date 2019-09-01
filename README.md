@@ -26,7 +26,7 @@ http://localhost:4444/dashboard/
 
 http://localhost:4444/wd/hub <br/>
 
-Exemplo de como fazer o apontamento do Zalenium em Java: <br/>
+<b> Exemplo de como fazer o apontamento do Zalenium em Java: </b><br/>
 
 DesiredCapabilities capabilities = new DesiredCapabilities(); <br/>
 capabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME); <br/>
