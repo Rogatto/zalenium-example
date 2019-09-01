@@ -26,5 +26,5 @@ http://localhost:4444/dashboard/
 http://localhost:4444/wd/hub
 
 # Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium
-Cookie cookie = new Cookie("zaleniumTestPassed", "true");
+Cookie cookie = new Cookie("zaleniumTestPassed", "true"); <br/>
 driver.manage().addCookie(cookie);
