@@ -1,4 +1,5 @@
 import org.junit.*;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.BrowserType;
@@ -30,6 +31,9 @@ public class TestZalenium {
     @Test
     public void testZalenium(){
         driver.get("https://www.google.com.br");
+        Cookie cookie = new Cookie("zaleniumTestPassed", "true");
+        driver.manage().addCookie(cookie);
+        Assert.assertFalse(true);
     }
 
     @After

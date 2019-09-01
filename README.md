@@ -24,3 +24,7 @@ http://localhost:4444/dashboard/
 
 # Apontar nossos testes para o seguinte endpoint para executar localmente: 
 http://localhost:4444/wd/hub
+
+# Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium
+Cookie cookie = new Cookie("zaleniumTestPassed", "true");
+driver.manage().addCookie(cookie);
