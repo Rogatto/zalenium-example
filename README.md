@@ -1,7 +1,7 @@
 # Projeto de exemplo do Zalenium
 **Demonstrando a execução do Zalenium de nossos testes criado com o Selenium.**
 
-#Instalação do Zalenium
+# Instalação do Zalenium
 
 docker pull elgalu/selenium <br/>
 docker pull dosel/zalenium
@@ -23,8 +23,18 @@ http://localhost:4444/grid/admin/live
 http://localhost:4444/dashboard/
 
 # Apontar nossos testes para o seguinte endpoint para executar localmente: 
-http://localhost:4444/wd/hub
 
-# Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium
+http://localhost:4444/wd/hub <br/>
+
+Exemplo de como fazer o apontamento do Zalenium em Java: <br/>
+
+DesiredCapabilities capabilities = new DesiredCapabilities(); <br/>
+capabilities.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME); <br/>
+capabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); <br/>
+URL remoteWebDriverUrl = new URL("http://localhost:4444/wd/hub"); <br/>
+driver = new RemoteWebDriver(remoteWebDriverUrl, capabilities); <br/>
+
+# Extra
+Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium: <br/>
 Cookie cookie = new Cookie("zaleniumTestPassed", "true"); <br/>
 driver.manage().addCookie(cookie);
