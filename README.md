@@ -1,4 +1,4 @@
-# zalenium-example
+# Projeto de exemplo do Zalenium
 **Demonstrando a execução do Zalenium de nossos testes criado com o Selenium.**
 
 #Instalação do Zalenium
