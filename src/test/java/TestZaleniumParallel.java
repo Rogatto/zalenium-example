@@ -16,7 +16,7 @@ public class TestZaleniumParallel {
 
     private WebDriver driver;
 
-    @Parameters({ "browser" })
+    @Parameters({"browser"})
     @BeforeClass
     public void setUp(String browser) throws MalformedURLException {
 
