@@ -35,6 +35,7 @@ URL remoteWebDriverUrl = new URL("http://localhost:4444/wd/hub"); <br/>
 driver = new RemoteWebDriver(remoteWebDriverUrl, capabilities); <br/>
 
 # Extra
-Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium: <br/>
+<b> Para deixar o status da execução dos testes com sucesso ou falha no dashboard do Zalenium: </b> <br/>
+
 Cookie cookie = new Cookie("zaleniumTestPassed", "true"); <br/>
 driver.manage().addCookie(cookie);
